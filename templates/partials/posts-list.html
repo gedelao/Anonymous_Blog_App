@@ -1,0 +1,9 @@
+<ul>
+    <h1>${title}</h1>
+    <h2>Current Users</h2>
+${posts.map((post) => {
+    return(`
+<li><a href='/posts/${post.id}'>${post.user_name}</a></li>
+`)
+}).join('')}
+</ul>
